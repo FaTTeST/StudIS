@@ -1,0 +1,20 @@
+{
+  "name": "StudIS",
+  "description": "Sudent control system",
+  "main": "",
+  "moduleType": [
+    "globals"
+  ],
+  "authors": [
+    "FaTTeST"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
