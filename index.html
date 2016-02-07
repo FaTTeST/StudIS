@@ -4,13 +4,25 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/components.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body ng-app="StudIS">
+<ng-include src="'app/views/tpl/top-navbar.html'"></ng-include>
+<div class="container-fluid wrapper">
+    <div class="row wrapper">
+        <ng-include src="'app/views/tpl/sidebar.html'"></ng-include>
+        <ng-include src="'app/views/tpl/container.html'"></ng-include>
+
+    </div>
+</div>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/angular-route/angular-route.min.js"></script>
 <script src="bower_components/angular-messages/angular-messages.min.js"></script>
+<script src="app/app.js"></script>
 </body>
 </html>
