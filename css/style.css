@@ -13,9 +13,7 @@
     font-weight: bold;
     text-transform: uppercase;
 }
-.wrapper {
-    min-width: 768px;
-}
+
 .sidebar {
     position: fixed;
     top: 51px;
