@@ -7,13 +7,21 @@
     text-transform: capitalize;
 
 }
+.logo:hover {
+    color:#36c6d3;
+}
 
 .logo span {
     color: #c12e2a;
     font-weight: bold;
     text-transform: uppercase;
 }
-
+.main {
+    padding: 20px;
+    top: 51px;
+    margin-bottom: 51px;
+    bottom: 60px;
+}
 .sidebar {
     position: fixed;
     top: 51px;
@@ -27,15 +35,45 @@
     background-color: #f5f5f5;
     border-right: 1px solid #eee;
 }
-
-.main {
-    padding: 20px;
-    top: 51px;
-}
-
-@media (min-width: 768px)
+@media (min-width: 768px){
     .main {
         padding-right: 40px;
         padding-left: 40px;
 
     }
+}
+.navbar-header {
+    float: left;
+}
+#navbar {
+    margin-right: 50px;
+    float: right;
+}
+
+#top-menu>ul>li>a {
+    background-color: transparent;
+    color: #ffffff;
+}
+#top-menu>ul>li>a:hover{
+    background-color: rgba(238, 238, 238, 0.23);
+}
+#top-menu .fa-cog{
+    float: left;
+    margin-top: 5px;
+}
+
+/*
+***** Footer *****
+*/
+#footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 35px;
+    background-color: #364150;
+}
+#footer p {
+    margin: 10px 0;
+}
+

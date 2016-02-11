@@ -6,16 +6,17 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/components.min.css">
+    <link rel="stylesheet" href="css/layout.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/sidebar.css">
 </head>
 <body ng-app="StudIS">
 <ng-include src="'app/views/tpl/top-navbar.html'"></ng-include>
-<div class="container-fluid wrapper">
-    <div class="row wrapper">
+<div class="container-fluid">
+    <div class="row">
         <ng-include src="'app/views/tpl/sidebar.html'"></ng-include>
         <ng-include src="'app/views/tpl/container.html'"></ng-include>
-
+        <ng-include src="'app/views/tpl/footer.html'"></ng-include>
     </div>
 </div>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
