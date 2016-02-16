@@ -1,1 +1,1 @@
-var StudIS = angular.module("StudIS", []);
+var StudIS = angular.module('StudIS', ['ui.router']);

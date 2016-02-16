@@ -83,6 +83,13 @@
 .nav-side-menu li a {
     text-decoration: none;
     color: #e1ffff;
+    display: block;
+}
+.sub-menu li a {
+    margin-left: 25px;
+}
+.sub-menu li:before {
+    position: absolute;
 }
 .nav-side-menu li a i {
     padding-left: 10px;

@@ -4,26 +4,19 @@
         <div class="menu-list">
 
             <ul id="menu-content" class="menu-content">
-                <li data-toggle="collapse" data-target="#dashboard" class="active">
-                    <a href="#">
+                <li ui-sref-active="active" data-toggle="collapse" data-target="#dashboard">
+                    <a ui-sref="dashboard">
                         <i class="fa fa-dashboard fa-lg"></i> Панель управления
                     </a>
                 </li>
 
-                <li  data-toggle="collapse" data-target="#products" class="collapsed">
+                <li  data-toggle="collapse" data-target="#directory" class="collapsed">
                     <a href="#"><i class="fa fa-gift fa-lg"></i> Справочники <span class="arrow"></span></a>
                 </li>
-                <ul class="sub-menu collapse" id="products">
-                    <li class="active"><a href="#">CSS3 Animation</a></li>
-                    <li><a href="#">General</a></li>
-                    <li><a href="#">Buttons</a></li>
-                    <li><a href="#">Tabs & Accordions</a></li>
-                    <li><a href="#">Typography</a></li>
-                    <li><a href="#">FontAwesome</a></li>
-                    <li><a href="#">Slider</a></li>
-                    <li><a href="#">Panels</a></li>
-                    <li><a href="#">Widgets</a></li>
-                    <li><a href="#">Bootstrap Model</a></li>
+                <ul class="sub-menu collapse" id="directory">
+                    <li ui-sref-active="active"><a  ui-sref="students">Учащиеся</a></li>
+                    <li ui-sref-active="active"><a href="#">Абитуриенты</a></li>
+                    <li ui-sref-active="active"><a href="#">Преподаватели</a></li>
                 </ul>
 
 

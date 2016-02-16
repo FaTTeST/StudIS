@@ -11,19 +11,30 @@
     <link rel="stylesheet" href="css/sidebar.css">
 </head>
 <body ng-app="StudIS">
-<ng-include src="'app/views/tpl/top-navbar.html'"></ng-include>
+<ui-view
+        name="top-navbar">
+</ui-view>
+
 <div class="container-fluid">
     <div class="row">
-        <ng-include src="'app/views/tpl/sidebar.html'"></ng-include>
-        <ng-include src="'app/views/tpl/container.html'"></ng-include>
-        <ng-include src="'app/views/tpl/footer.html'"></ng-include>
+        <ui-view
+                name="sidebar">
+        </ui-view>
+        <ui-view
+                name="container">
+        </ui-view>
+        <ui-view
+                name="footer">
+        </ui-view>
+
     </div>
 </div>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="bower_components/angular/angular.min.js"></script>
-<script src="bower_components/angular-route/angular-route.min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 <script src="bower_components/angular-messages/angular-messages.min.js"></script>
 <script src="app/app.js"></script>
+<script src="app/router.js"></script>
 </body>
 </html>
