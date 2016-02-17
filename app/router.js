@@ -1,9 +1,11 @@
 StudIS.config(function ($stateProvider, $urlRouterProvider) {
 
-    $urlRouterProvider.otherwise("/");
+    $urlRouterProvider.otherwise("/dashboard");
+    $urlRouterProvider.when('/',"/dashboard");
     $stateProvider
         .state('index', {
             url: '',
+            abstract:true,
             views: {
                 'top-navbar': {
                     templateUrl: 'app/views/tpl/top-navbar.html'
@@ -12,20 +14,30 @@ StudIS.config(function ($stateProvider, $urlRouterProvider) {
                     templateUrl: 'app/views/tpl/sidebar.html'
                 },
                 'container': {
-                    templateUrl: 'app/views/tpl/container.html'
+                    templateUrl: 'app/views/tpl/container.html',
+
                 },
                 'footer': {
                     templateUrl: 'app/views/tpl/footer.html'
                 }
             }
-
         })
         .state('index.dashboard', {
             url: "/dashboard",
-            templateUrl: "app/views/dashboard/dashboard.html"
+            views: {
+                'workspace': {
+                    templateUrl: "app/views/dashboard/dashboard.html"
+                }
+            }
+
         })
-        .state('students', {
+        .state('index.students', {
             url: "/students",
-            templateUrl: "app/views/students/students.html"
+            views: {
+                'workspace': {
+                    templateUrl: "app/views/students/students.html"
+                }
+            }
+
         });
 });

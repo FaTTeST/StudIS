@@ -1,6 +1,4 @@
-var StudIS = angular.module('StudIS', ['ui.router','ui.grid']);
-
-StudIS.controller('StudentsGridCtrl', ['$scope', function($scope) {
+StudIS.controller('GreetingController', ['$scope', function($scope) {
     $scope.myData = [
         {
             "id": 0,
@@ -64,4 +62,3 @@ StudIS.controller('StudentsGridCtrl', ['$scope', function($scope) {
         }
     ]
 }]);
-
