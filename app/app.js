@@ -1,66 +1,41 @@
-var StudIS = angular.module('StudIS', ['ui.router','ui.grid']);
+var StudIS = angular.module('StudIS', ['ui.router','ui.grid', 'ui.grid.cellNav']);
 
 StudIS.controller('StudentsGridCtrl', ['$scope', function($scope) {
+    $scope.columnNames = [
+        {name: 'Фамилия', field: 'surname'},
+        {name: 'Имя', field: 'name' },
+        {name: 'Отчество', field: 'patronymic'},
+        {name: 'Дата рождения', field: 'birthday'},
+        {name: 'Дата поступления', field: 'receipt_date'},
+        {name: 'Статус', field: 'status'}
+    ];
     $scope.myData = [
         {
             "id": 0,
-            "name": "Ramsey Cummings",
-            "gender": "male",
-            "age": 52,
-            "address": {
-                "state": "South Carolina",
-                "city": "Glendale"
-            }
+            "surname": "Федоров",
+            "name": "Андрей",
+            "patronymic": "Ивановоич",
+            "birthday": "12.11.1992",
+            "receipt_date": "05.07.2012",
+            "status": "Студен",
         },
         {
             "id": 1,
-            "name": "Stefanie Huff",
-            "gender": "female",
-            "age": 70,
-            "address": {
-                "state": "Arizona",
-                "city": "Beaverdale"
-            }
+            "surname": "Федоров",
+            "name": "Андрей",
+            "patronymic": "Ивановоич",
+            "birthday": "12.11.1992",
+            "receipt_date": "05.07.2012",
+            "status": "Студен",
         },
         {
             "id": 2,
-            "name": "Mabel David",
-            "gender": "female",
-            "age": 52,
-            "address": {
-                "state": "New Mexico",
-                "city": "Grazierville"
-            }
-        },
-        {
-            "id": 3,
-            "name": "Frank Bradford",
-            "gender": "male",
-            "age": 61,
-            "address": {
-                "state": "Wisconsin",
-                "city": "Saranap"
-            }
-        },
-        {
-            "id": 4,
-            "name": "Forbes Levine",
-            "gender": "male",
-            "age": 34,
-            "address": {
-                "state": "Vermont",
-                "city": "Norris"
-            }
-        },
-        {
-            "id": 5,
-            "name": "Santiago Mcclain",
-            "gender": "male",
-            "age": 38,
-            "address": {
-                "state": "Montana",
-                "city": "Bordelonville"
-            }
+            "surname": "Федоров",
+            "name": "Андрей",
+            "patronymic": "Ивановоич",
+            "birthday": "12.11.1992",
+            "receipt_date": "05.07.2012",
+            "status": "Студен",
         }
     ]
 }]);
